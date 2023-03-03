@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+    <title>Cook me...</title>
+    <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="pictures/logo.png" alt="dessin d'œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="new-recipe.html" class="btn">
+                                Créer une recette
+                            </a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="result.php&category=aperitif">
+                                        Apéritif
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="result.php&category=entree">
+                                        Entrée
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="result.php&category=dish">
+                                        Plat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="result.php&category=snack">
+                                        Encas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="categories.html&category=dessert">
+                                        Dessert
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="connexion.html">
+                                Connexion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <h1>Créer une recette</h1>
+                <form action="result.php" method="post">
+                    <label for="new-recipe__author">Nom ou pseudo *</label>
+                    <input type="text" name="new-recipe__author" id="new-recipe__author" required>
+
+                    <label for="new-recipe__photo">Ajouter une photo *</label>
+                    <div class="new-recipe__file">
+                        <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" class="btn" required>
+                        <a href="pictures/plat.jpg">nomfichier.jpg</a>
+                    </div>
+
+                    <label for="new-recipe__category">Catégorie *</label>
+                    <select name="new-recipe__category" id="new-recipe__category" required>
+                        <option value="" >--choisir une catégorie--</option>
+                        <option value="aperitif">Apéritif</option>
+                        <option value="entree">Entrée</option>
+                        <option value="dish">Plat</option>
+                        <option value="snack">Encas</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+
+                    <label for="new-recipe__title">Titre *</label>
+                    <input type="text" name="new-recipe__title" id="new-recipe__title" required>
+
+                    <label for="new-recipe__recipe">Recette *</label>
+                    <textarea name="new-recipe__recipe" id="new-recipe__recipe" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Poster la recette">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
