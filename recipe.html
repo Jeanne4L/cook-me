@@ -70,125 +70,106 @@
             </div>
         </header>
 
-        <section class="main-recipe">
-            <div class="container">
+        <div class="container">
+            <section>
                 <img src="pictures/plat.jpg" alt="photo d'un plat">
-                <div class="main-recipe__desc">
-                    <h1>Titre de la recette</h1>
-                    <span>catégorie</span>
+                <div class="recipe__desc">
+                    <div class="recipe__title">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <h1>Titre de la recette</h1>
+                        <div class="favorite-icon">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                    <p>catégorie</p>
+                    <div class="grade">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#opinions">voir les avis</a>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, excepturi voluptates? Vel cupiditate obcaecati consectetur neque laudantium officiis dolores dolorum eaque, commodi voluptatem aliquam labore similique sed perspiciatis voluptate iusto.
                         Commodi, eaque quo. Ipsum, laudantium, velit adipisci animi blanditiis fugit magnam beatae incidunt sit cupiditate eum in dolores quas nam quod repellat iure! Doloribus sapiente labore quasi beatae commodi in.
                     </p>
-                    <a href="recipe.html"></a>
+                    <p>auteur</p>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
+            </section>
+
+            <section>
+                <h1>Noter la recette</h1>
+                <form action="result.php" method="post">
+                    <label for="form-recipe__grade">Note *</label>
+                    <div class="form-recipe__grade">
+                        <div class="form-recipe__grade-1">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>                        
+                        <div class="form-recipe__grade-2">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="form-recipe__grade-3">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="form-recipe__grade-4">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="form-recipe__grade-5">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star-half"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <label for="form-recipe__author">Nom ou pseudo *</label>
+                    <input type="text" name="form-recipe__author" id="form-recipe__author" required>
+
+                    <label for="form-recipe__opinion">Avis</label>
+                    <textarea name="form-recipe__opinion" id="form-recipe__opinion" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="Noter">
+                </form>
+            </section>
+
+            <section id="opinions">
+                <div class="opinion">
+                    <div class="opinion__title">
+                        <p>Pseudo</p>
+                        <div>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star-half-stroke"></i>
                             <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nihil rem cum ratione odit ipsum aut quibusdam repellat sequi!</p>
+                </div>
+                <div class="opinion">
+                    <div class="opinion__title">
+                        <p>Pseudo</p>
+                        <div>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-regular fa-star-half-stroke"></i>
                             <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="recipe.html">
-                    <figure>
-                        <img src="pictures/plat.jpg" alt="photo d'un plat">
-                        <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </figcaption>
-                    </figure>
-                </a>
-            <div class="pages">
-                <span class="current-page">1</span>
-                <span>
-                    <a href="result.php&page=2">
-                        2
-                    </a>
-                </span>
-                <span>
-                    <a href="result.php&page=3">
-                        3
-                    </a>
-                </span>
-                <span>
-                    <a href="result.php&page=4">
-                        4
-                    </a>
-                </span>
-                <span>...</span>
-                <span>
-                    <a href="result.php&page=30">
-                        30
-                    </a>
-                </span>
-            </div>
-        </section>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nihil rem cum ratione odit ipsum aut quibusdam repellat sequi!</p>
+                </div>
+            </section>
+        </div>
         <footer>
             <div class="container">
                 <nav>

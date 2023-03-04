@@ -67,34 +67,31 @@
 
         <section>
             <div class="container">
-                <h1>Créer une recette</h1>
+                <h1>Connexion</h1>
                 <form action="result.php" method="post">
-                    <label for="new-recipe__author">Nom ou pseudo *</label>
-                    <input type="text" name="new-recipe__author" id="new-recipe__author" required>
+                    <label for="connexion__email">Email *</label>
+                    <input type="text" name="connexion__email" id="connexion__email" required>
 
-                    <label for="new-recipe__photo">Ajouter une photo *</label>
-                    <div class="new-recipe__file">
-                        <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" class="btn" required>
-                        <a href="pictures/plat.jpg">nomfichier.jpg</a>
-                    </div>
+                    <label for="connexion__password">Mot de passe *</label>
+                    <input type="text" name="connexion__password" id="connexion__password" required>
 
-                    <label for="new-recipe__category">Catégorie *</label>
-                    <select name="new-recipe__category" id="new-recipe__category" required>
-                        <option value="" >--choisir une catégorie--</option>
-                        <option value="aperitif">Apéritif</option>
-                        <option value="entree">Entrée</option>
-                        <option value="dish">Plat</option>
-                        <option value="snack">Encas</option>
-                        <option value="dessert">Dessert</option>
-                    </select>
+                    <input type="submit" value="Se connecter">
+                </form>
 
-                    <label for="new-recipe__title">Titre *</label>
-                    <input type="text" name="new-recipe__title" id="new-recipe__title" required>
+                <div class="separation-line"></div>
 
-                    <label for="new-recipe__recipe">Recette *</label>
-                    <textarea name="new-recipe__recipe" id="new-recipe__recipe" cols="30" rows="10"></textarea>
+                <h1>Créer un compte</h1>
+                <form action="result.php" method="post">
+                    <label for="new-account__name">Nom ou pseudo *</label>
+                    <input type="text" name="new-account__name" id="new-account__name" required>
 
-                    <input type="submit" value="Poster la recette">
+                    <label for="new-account__email">Email *</label>
+                    <input type="text" name="new-account__email" id="new-account__email" required>
+
+                    <label for="connexion__password">Mot de passe *</label>
+                    <input type="text" name="connexion__password" id="connexion__password" required>
+
+                    <input type="submit" value="Enregistrer">
                 </form>
             </div>
         </section>

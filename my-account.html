@@ -65,39 +65,63 @@
             </div>
         </header>
 
-        <section>
-            <div class="container">
-                <h1>Créer une recette</h1>
+        <div class="container">
+            <section>
+                <h1>Mes favoris</h1>
+                <div class="favorite-recipes__container">
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h1>Mes recettes</h1>
+                <div class="my-recipes__container">
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                    <a href="recipe.html">
+                        <img src="pictures/plat.jpg" alt="photo d'un plat">
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h1>Modifier mes informations</h1>
                 <form action="result.php" method="post">
-                    <label for="new-recipe__author">Nom ou pseudo *</label>
-                    <input type="text" name="new-recipe__author" id="new-recipe__author" required>
+                    <label for="new-account__name">Nom ou pseudo *</label>
+                    <input type="text" name="new-account__name" id="new-account__name" required>
 
-                    <label for="new-recipe__photo">Ajouter une photo *</label>
-                    <div class="new-recipe__file">
-                        <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" class="btn" required>
-                        <a href="pictures/plat.jpg">nomfichier.jpg</a>
-                    </div>
+                    <label for="new-account__email">Email *</label>
+                    <input type="text" name="new-account__email" id="new-account__email" required>
 
-                    <label for="new-recipe__category">Catégorie *</label>
-                    <select name="new-recipe__category" id="new-recipe__category" required>
-                        <option value="" >--choisir une catégorie--</option>
-                        <option value="aperitif">Apéritif</option>
-                        <option value="entree">Entrée</option>
-                        <option value="dish">Plat</option>
-                        <option value="snack">Encas</option>
-                        <option value="dessert">Dessert</option>
-                    </select>
+                    <label for="connexion__password">Mot de passe *</label>
+                    <input type="text" name="connexion__password" id="connexion__password" required>
 
-                    <label for="new-recipe__title">Titre *</label>
-                    <input type="text" name="new-recipe__title" id="new-recipe__title" required>
-
-                    <label for="new-recipe__recipe">Recette *</label>
-                    <textarea name="new-recipe__recipe" id="new-recipe__recipe" cols="30" rows="10"></textarea>
-
-                    <input type="submit" value="Poster la recette">
+                    <input type="submit" value="Enregistrer">
                 </form>
-            </div>
-        </section>
+                <div class="my-account__links">
+                    <p>Déconnexion</p>
+                    <p class="alert">Supprimer mon compte</p>
+                </div>
+            </section>
+        </div>
         <footer>
             <div class="container">
                 <nav>
