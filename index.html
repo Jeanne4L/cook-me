@@ -5,23 +5,28 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="">
+
         <title>Cook me...</title>
         <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="container">
                 <img src="pictures/logo.png" alt="dessin d'œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
-                <nav>
+                <nav class="hidden">
                     <ul>
-                        <li>
-                            <a href="new-recipe.html" class="btn">
+                        <li class="btn">
+                            <a href="new-recipe.html">
                                 Créer une recette
                             </a>
                         </li>
                         <li>
+                            Catégories
+                        </li>
+                        <li class="categories-items">
                             <ul>
                                 <li>
                                     <a href="result.php&category=aperitif">
@@ -50,25 +55,27 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="last-item">
                             <a href="connexion.html">
                                 Connexion
                             </a>
                         </li>
-                        <li>
+                        <li class="hidden last-item">
                             <a href="my-account.html">
                                 Mon compte
                             </a>
                         </li>
-                        <li>
-                            <a href="search">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
-                        </li>
                     </ul>
                 </nav>
+                <a href="search.html">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
             </div>
         </header>
+
+        <div class="overlay hidden"></div>
 
         <section class="main-recipe">
             <div class="container">
@@ -80,22 +87,25 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, excepturi voluptates? Vel cupiditate obcaecati consectetur neque laudantium officiis dolores dolorum eaque, commodi voluptatem aliquam labore similique sed perspiciatis voluptate iusto.
                         Commodi, eaque quo. Ipsum, laudantium, velit adipisci animi blanditiis fugit magnam beatae incidunt sit cupiditate eum in dolores quas nam quod repellat iure! Doloribus sapiente labore quasi beatae commodi in.
                     </p>
-                    <a href="recipe.html"></a>
+                    <a href="recipe.html" class="underline">voir la recette</a>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="all-recipes">
             <div class="container">
                 <a href="recipe.html">
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
@@ -103,12 +113,15 @@
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
@@ -116,12 +129,15 @@
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
@@ -129,12 +145,15 @@
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
@@ -142,12 +161,15 @@
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
@@ -155,15 +177,19 @@
                     <figure>
                         <img src="pictures/plat.jpg" alt="photo d'un plat">
                         <div class="recipes__overlay"></div>
-                        <figcaption class="grade">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
+                        <figcaption>
+                            Titre de la recette
+                            <div class="grade">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </figcaption>
                     </figure>
                 </a>
+            </div>
             <div class="pages">
                 <span class="current-page">1</span>
                 <span>
