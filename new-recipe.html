@@ -5,9 +5,10 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="">
-        <title>Cook me...</title>
+        <title>Nouvelle recette - Cook me...</title>
         <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -80,19 +81,20 @@
         <div class="container">
             <section class="top-section">
                 <h1>Créer une recette</h1>
-                <form action="result.php" method="post">
+                <form action="result.php" method="post">    
+                    <label for="new-recipe__photo">Ajouter une photo *</label>
+                    <div class="form__upload">
+                        <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" required>
+                        <div class="btn upload-btn">télécharger</div>
+                        <p class="upload-filename">fichier.jpg</p>
+                    </div>
+
                     <label for="new-recipe__author">Nom ou pseudo *</label>
                     <input type="text" name="new-recipe__author" id="new-recipe__author" required>
     
-                    <label for="new-recipe__photo">Ajouter une photo *</label>
-                    <div class="new-recipe__file">
-                        <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" class="btn" required>
-                        <a href="pictures/plat.jpg">nomfichier.jpg</a>
-                    </div>
-    
                     <label for="new-recipe__category">Catégorie *</label>
                     <select name="new-recipe__category" id="new-recipe__category" required>
-                        <option value="" >--choisir une catégorie--</option>
+                        <option value="" >-- choisir une catégorie --</option>
                         <option value="aperitif">Apéritif</option>
                         <option value="entree">Entrée</option>
                         <option value="dish">Plat</option>
@@ -106,7 +108,7 @@
                     <label for="new-recipe__recipe">Recette *</label>
                     <textarea name="new-recipe__recipe" id="new-recipe__recipe" cols="30" rows="10"></textarea>
     
-                    <input type="submit" value="Poster la recette">
+                    <input type="submit" value="Poster la recette" class="btn">
                 </form>
             </section>
         </div>
