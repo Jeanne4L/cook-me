@@ -5,9 +5,10 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="">
-        <title>Cook me...</title>
+        <title>Recette - Cook me...</title>
         <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -89,20 +90,22 @@
                             <i class="fa-sharp fa-solid fa-heart"></i>
                         </div>
                     </div>
-                    <p>catégorie</p>
-                    <div class="grade">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="recipe__info">
+                        <span>catégorie</span>
+                        <div class="grade">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <a href="#opinions" class="underline">voir les avis</a>
                     </div>
-                    <a href="#opinions">voir les avis</a>
-                    <p>
+                    <p class="recipe__prep">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, excepturi voluptates? Vel cupiditate obcaecati consectetur neque laudantium officiis dolores dolorum eaque, commodi voluptatem aliquam labore similique sed perspiciatis voluptate iusto.
                         Commodi, eaque quo. Ipsum, laudantium, velit adipisci animi blanditiis fugit magnam beatae incidunt sit cupiditate eum in dolores quas nam quod repellat iure! Doloribus sapiente labore quasi beatae commodi in.
                     </p>
-                    <p>auteur</p>
+                    <p class="recipe__author">auteur</p>
                 </div>
             </section>
 
@@ -111,30 +114,30 @@
                 <form action="result.php" method="post">
                     <label for="form-recipe__grade">Note *</label>
                     <div class="form-recipe__grade">
-                        <div class="form-recipe__grade-1">
+                        <div class="recipe__grade recipe__grade-1">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-solid fa-star-half"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star black-star"></i>
                         </div>                        
-                        <div class="form-recipe__grade-2">
+                        <div class="recipe__grade recipe__grade-2">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-solid fa-star-half"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star black-star"></i>
                         </div>
-                        <div class="form-recipe__grade-3">
+                        <div class="recipe__grade recipe__grade-3">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-solid fa-star-half"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star black-star"></i>
                         </div>
-                        <div class="form-recipe__grade-4">
+                        <div class="recipe__grade recipe__grade-4">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-solid fa-star-half"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star black-star"></i>
                         </div>
-                        <div class="form-recipe__grade-5">
+                        <div class="recipe__grade recipe__grade-5">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-solid fa-star-half"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star black-star"></i>
                         </div>
                     </div>
 
@@ -144,7 +147,7 @@
                     <label for="form-recipe__opinion">Avis</label>
                     <textarea name="form-recipe__opinion" id="form-recipe__opinion" cols="30" rows="10"></textarea>
 
-                    <input type="submit" value="Noter">
+                    <input type="submit" value="Noter" class="btn">
                 </form>
             </section>
 
