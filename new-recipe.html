@@ -13,13 +13,18 @@
     <body>
         <header>
             <div class="container">
-                <img src="pictures/logo.png" alt="dessin d'œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
-                <nav>
+                <a href="index.html" class="logo">
+                    <img src="pictures/logo.png" alt="dessin d'un œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
+                </a>
+                <nav class="hidden">
                     <ul>
                         <li class="btn">
                             <a href="new-recipe.html">
                                 Créer une recette
                             </a>
+                        </li>
+                        <li>
+                            Catégories
                         </li>
                         <li class="categories-items">
                             <ul>
@@ -50,12 +55,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="last-item">
                             <a href="connexion.html">
                                 Connexion
                             </a>
                         </li>
-                        <li>
+                        <li class="hidden last-item">
                             <a href="my-account.html">
                                 Mon compte
                             </a>
@@ -70,21 +75,21 @@
             </div>
         </header>
 
-        <div class="overlay"></div>
+        <div class="overlay hidden"></div>
 
-        <section>
-            <div class="container">
+        <div class="container">
+            <section class="top-section">
                 <h1>Créer une recette</h1>
                 <form action="result.php" method="post">
                     <label for="new-recipe__author">Nom ou pseudo *</label>
                     <input type="text" name="new-recipe__author" id="new-recipe__author" required>
-
+    
                     <label for="new-recipe__photo">Ajouter une photo *</label>
                     <div class="new-recipe__file">
                         <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" class="btn" required>
                         <a href="pictures/plat.jpg">nomfichier.jpg</a>
                     </div>
-
+    
                     <label for="new-recipe__category">Catégorie *</label>
                     <select name="new-recipe__category" id="new-recipe__category" required>
                         <option value="" >--choisir une catégorie--</option>
@@ -94,17 +99,17 @@
                         <option value="snack">Encas</option>
                         <option value="dessert">Dessert</option>
                     </select>
-
+    
                     <label for="new-recipe__title">Titre *</label>
                     <input type="text" name="new-recipe__title" id="new-recipe__title" required>
-
+    
                     <label for="new-recipe__recipe">Recette *</label>
                     <textarea name="new-recipe__recipe" id="new-recipe__recipe" cols="30" rows="10"></textarea>
-
+    
                     <input type="submit" value="Poster la recette">
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
         <footer>
             <div class="container">
                 <nav>

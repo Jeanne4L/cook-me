@@ -13,13 +13,18 @@
     <body>
         <header>
             <div class="container">
-                <img src="pictures/logo.png" alt="dessin d'œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
-                <nav>
+                <a href="index.html" class="logo">
+                    <img src="pictures/logo.png" alt="dessin d'un œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
+                </a>
+                <nav class="hidden">
                     <ul>
                         <li class="btn">
                             <a href="new-recipe.html">
                                 Créer une recette
                             </a>
+                        </li>
+                        <li>
+                            Catégories
                         </li>
                         <li class="categories-items">
                             <ul>
@@ -50,12 +55,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="last-item">
                             <a href="connexion.html">
                                 Connexion
                             </a>
                         </li>
-                        <li>
+                        <li class="hidden last-item">
                             <a href="my-account.html">
                                 Mon compte
                             </a>
@@ -70,10 +75,10 @@
             </div>
         </header>
 
-        <div class="overlay"></div>
+        <div class="overlay hidden"></div>
 
         <div class="container">
-            <section>
+            <section class="top-section">
                 <img src="pictures/plat.jpg" alt="photo d'un plat">
                 <div class="recipe__desc">
                     <div class="recipe__title">

@@ -5,21 +5,28 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="">
-        <title>Cook me...</title>
+
+        <title>Connexion - Cook me...</title>
         <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
 
+        <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div class="container">
-                <img src="pictures/logo.png" alt="dessin d'œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
-                <nav>
+                <a href="index.html" class="logo">
+                    <img src="pictures/logo.png" alt="dessin d'un œil avec une orange à la place de l'iris" srcset="pictures/logo.svg">
+                </a>
+                <nav class="hidden">
                     <ul>
                         <li class="btn">
                             <a href="new-recipe.html">
                                 Créer une recette
                             </a>
+                        </li>
+                        <li>
+                            Catégories
                         </li>
                         <li class="categories-items">
                             <ul>
@@ -50,12 +57,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="last-item">
                             <a href="connexion.html">
                                 Connexion
                             </a>
                         </li>
-                        <li>
+                        <li class="hidden last-item">
                             <a href="my-account.html">
                                 Mon compte
                             </a>
@@ -70,38 +77,38 @@
             </div>
         </header>
 
-        <div class="overlay"></div>
+        <div class="overlay hidden"></div>
 
-        <section>
-            <div class="container">
+        <div class="container">
+            <section class="top-section">
                 <h1>Connexion</h1>
                 <form action="result.php" method="post">
                     <label for="connexion__email">Email *</label>
                     <input type="text" name="connexion__email" id="connexion__email" required>
-
+    
                     <label for="connexion__password">Mot de passe *</label>
                     <input type="text" name="connexion__password" id="connexion__password" required>
-
-                    <input type="submit" value="Se connecter">
+    
+                    <input type="submit" value="Se connecter" class="btn">
                 </form>
-
-                <div class="separation-line"></div>
-
+            </section>
+            <div class="separation-line"></div>
+            <section>
                 <h1>Créer un compte</h1>
                 <form action="result.php" method="post">
                     <label for="new-account__name">Nom ou pseudo *</label>
                     <input type="text" name="new-account__name" id="new-account__name" required>
-
+    
                     <label for="new-account__email">Email *</label>
                     <input type="text" name="new-account__email" id="new-account__email" required>
-
+    
                     <label for="connexion__password">Mot de passe *</label>
                     <input type="text" name="connexion__password" id="connexion__password" required>
-
-                    <input type="submit" value="Enregistrer">
+    
+                    <input type="submit" value="Enregistrer" class="btn">
                 </form>
-            </div>
-        </section>
+            </section>
+        </div>
         <footer>
             <div class="container">
                 <nav>
