@@ -81,7 +81,7 @@
         <div class="container">
             <section class="top-section">
                 <h1>Créer une recette</h1>
-                <form action="result.php" method="post">    
+                <form action="php/result.php" method="post" enctype="multipart/form-data">    
                     <label for="new-recipe__photo">Ajouter une photo *</label>
                     <div class="form__upload">
                         <input type="file" accept="image/*" name="new-recipe__photo" id="new-recipe__photo" value="télécharger" required>
@@ -95,10 +95,10 @@
                     <label for="new-recipe__category">Catégorie *</label>
                     <select name="new-recipe__category" id="new-recipe__category" required>
                         <option value="" >-- choisir une catégorie --</option>
-                        <option value="aperitif">Apéritif</option>
-                        <option value="entree">Entrée</option>
-                        <option value="dish">Plat</option>
-                        <option value="snack">Encas</option>
+                        <option value="apéritif">Apéritif</option>
+                        <option value="entrée">Entrée</option>
+                        <option value="plat">Plat</option>
+                        <option value="encas">Encas</option>
                         <option value="dessert">Dessert</option>
                     </select>
     
